@@ -8,6 +8,8 @@ class NestedMissingArguments {
     implicit def aFromB(implicit b: B): A = new A
     implicit def bFromC(implicit c: C): B = new B
 
+//    uncomment lines one by one
+
 //    implicit val someC: C = new C
 //    implicit val someD: D = new D
 //    implicit val anotherC: C = new C

@@ -9,7 +9,7 @@ class ImplicitConversions {
     val i: Int = "123"
   }
 
-  // Implicit conversions include implicit arguments
+  // Implicit conversions include implicit arguments with default case
   {
     implicit val default: Int = 23
     implicit def stringToIntWithMore(s: String)(implicit more: Int): Int = Integer.parseInt(s) + more

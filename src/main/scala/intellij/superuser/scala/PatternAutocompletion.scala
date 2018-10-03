@@ -1,27 +1,10 @@
 package intellij.superuser.scala
 
-import scala.collection.mutable
 import scala.concurrent.Future
 
 object PatternAutocompletion {
 
 //  Autocompletion: exhaustive pattern matching and pattern completion
-  def main(args: Array[String]): Unit = {
-
-    val b1 = Board(20, 30)
-    val b2 = Board(30, 30)
-
-    val warning = Warning(2, "Be carefull next time!", "just body")
-    processEvent(warning)
-  }
-
-  case class Board(length: Int, height: Int) {
-    case class Coordinate(x: Int, y: Int) {
-      require(0 <= x && x < length && 0 <= y && y < height)
-    }
-
-    val occupied: mutable.Set[Coordinate] = scala.collection.mutable.Set[Coordinate]()
-  }
 
   def processEvent(event: Event): Future[String] = {
     event match {
@@ -32,8 +15,9 @@ object PatternAutocompletion {
   }
 
   def notifyCreature(creature: Creature) = creature match {
-    case human: Human =>
+    case
   }
+
 
 }
 

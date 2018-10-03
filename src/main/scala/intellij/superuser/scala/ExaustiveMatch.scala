@@ -8,10 +8,5 @@ case class Error(code: Short, reason: String) extends Event
 
 case class UserException(reason: String) extends Exception
 
-def processEvent(event: Event): Future[String] = {
-  event match {
-    case Notification(title, body)      => Future.successful(title)
-    case Warning(severity, title, body) => Future.successful(title)
-    case Error(code, reason)            => Future.failed(UserException(reason))
-  }
-}
+// try exaustive match here
+def processEvent(event: Event): Future[String] = ???

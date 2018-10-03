@@ -36,9 +36,4 @@ object ImplicitParams {
     acceptNotDefinedImplicit
   }
 
-
-
-
-
-
 }
