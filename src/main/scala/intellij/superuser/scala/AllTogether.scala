@@ -1,6 +1,6 @@
 package intellij.superuser.scala
 
-class AllTohether {
+class AllTogether {
   import scala.language.implicitConversions
  
   def greet(name: String)(implicit age: Int): Unit =
